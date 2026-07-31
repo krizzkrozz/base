@@ -1,8 +1,7 @@
 {
   description = "Shared base modules";
-
-  inputs.nixpkgs-ssh.url = "github:NixOS/nixpkgs/9.7p1";
-
+  # version 9.7p1
+  inputs.nixpkgs-ssh.url = "github:NixOS/nixpkgs/a343533bccc62400e8a9560423486a3b6c11a23b";
   outputs = { self, nixpkgs-ssh, ... }: {
     nixosModules.opensshPin =
       { pkgs, lib, ... }:
