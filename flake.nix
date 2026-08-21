@@ -11,5 +11,6 @@
     {
       # nixosModules.opensshPin = { ... };
       packages.x86_64-linux.openssh = pkgs-ssh.openssh;
+      packages.default.openssh = pkgs-ssh.openssh;
     };
 }
